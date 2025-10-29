@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini E-Commerce</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" height="50" width="50" alt="Logo">
+    <h1>𝕻𝖗𝖎𝖓𝖈𝖊 𝕾𝖒𝖆𝖗𝖙<br>𝕰𝖑𝖊𝖈𝖙𝖗𝖔𝖓𝖎𝖈𝖘</h1>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <main>
+    <h2>Products</h2>
+    <div class="product-container" id="product-list">
+      <!-- Products load here dynamically -->
+    </div>
+
+    <div class="cart-container" id="cart-container">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <div class="cart-buttons">
+        <button id="clear-cart" class="btn-clear">Clear Cart</button>
+        <button id="order-now" class="btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section">
+      <h2>We Value Your Feedback</h2>
+      <form id="feedback-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Feedback" required></textarea>
+        <button type="submit" class="btn-feedback">Submit Feedback</button>
+      </form>
+      <p id="feedback-response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MyShop | All Rights Reserved</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
